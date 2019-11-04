@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_topic"
+        android:textColor="@color/colorBrown"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textTopic"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/sensor1Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/sensor_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensor1Name"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:id="@+id/sensor2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/x_value"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sensor2Reading"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/sensor2Name"
+                android:text="@string/reading_name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sensor3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensor2Name"
+                android:layout_marginTop="50dp"
+                android:text="@string/y_value"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sensor3Reading"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensor2Name"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/sensor3Name"
+                android:text="@string/reading_name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sensor4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensor3Name"
+                android:layout_marginTop="50dp"
+                android:text="@string/z_value"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sensor4Reading"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sensor3Name"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/sensor4Name"
+                android:text="@string/reading_name"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreen"
+                android:text="@string/button1_name" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@+id/button1"
+                android:background="@color/colorRed"
+                android:text="@string/button2_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

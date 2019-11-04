@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sensor-app</string>
+    <string name="sensor_name">Accelerometer Sensor</string>
+    <string name="x_value">X value :</string>
+    <string name="y_value">Y value :</string>
+    <string name="z_value">Z value :</string>
+    <string name="button1_name">Start</string>
+    <string name="button2_name">Stop</string>
+    <string name="reading_name">0000</string>
+    <string name="app_topic">Dynamic Sensor Readings!</string>
+</resources>
